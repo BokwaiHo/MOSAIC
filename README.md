@@ -94,17 +94,6 @@ MOSAIC/
 └── README.md
 ```
 
-## Citation
-
-```bibtex
-@inproceedings{mosaic2025,
-  title={MOSAIC: Scaling Long-Horizon Language Agents via Multi-Scale Adaptive Inference Control},
-  author={Anonymous},
-  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2025}
-}
-```
-
 ## License
 
 MIT License
