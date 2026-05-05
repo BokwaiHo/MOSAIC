@@ -1,0 +1,49 @@
+# MOSAIC default configuration
+# Usage: AgentConfig.from_yaml("configs/default.yaml")
+
+backbone_model: "Qwen/Qwen3.5-35B-A3B"
+backend: "transformers"       # "transformers" or "vllm"
+device: "auto"
+
+strategic:
+  reasoning_budget: 4096
+  context_window: 2048
+  temperature: 0.0
+  max_retries: 2
+
+tactical:
+  reasoning_budget: 2048
+  context_window: 20
+  temperature: 0.0
+  max_retries: 2
+
+operational:
+  reasoning_budget: 512
+  context_window: 5
+  temperature: 0.0
+  max_retries: 2
+
+scheduler:
+  hidden_dim: 256
+  num_layers: 2
+  feature_dim: 64
+  budget_min: 256
+  budget_max: 6144
+  checkpoint_path: null        # set to "checkpoints/scheduler/best.pt" after training
+
+ppo:
+  learning_rate: 3.0e-4
+  clip_ratio: 0.2
+  gae_lambda: 0.95
+  gamma: 0.99
+  batch_size: 64
+  num_steps: 5000
+  rollouts_per_step: 8
+  entropy_coeff: 0.01
+  value_coeff: 0.5
+  max_grad_norm: 0.5
+
+lambda_efficiency: 0.1
+max_steps: 500
+summary_max_tokens: 2048
+verbose: false
