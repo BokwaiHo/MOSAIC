@@ -4,7 +4,7 @@ Official implementation for the paper *"MOSAIC: Scaling Long-Horizon Language Ag
 
 ## Overview
 
-MOSAIC is a hierarchical agent framework that decomposes long-horizon decision making into three temporal scales—**Strategic**, **Tactical**, and **Operational**—each governed by distinct context scopes and reasoning budgets. A learned **Scale Scheduler** dynamically routes decisions to the appropriate scale with an adaptive token budget.
+MOSAIC is a hierarchical agent framework that decomposes long-horizon decision making into three temporal scales: **Strategic**, **Tactical**, and **Operational**, each governed by distinct context scopes and reasoning budgets. A learned **Scale Scheduler** dynamically routes decisions to the appropriate scale with an adaptive token budget.
 
 
 ## Installation
